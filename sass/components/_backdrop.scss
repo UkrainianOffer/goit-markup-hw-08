@@ -29,9 +29,10 @@
   background-color: transparent;
   cursor: pointer;
   padding: 0;
-}
-.modal__close-btn:hover {
-  fill: var(--accent-color);
+
+  &:hover {
+    fill: var(--accent-color);
+  }
 }
 
 .button__list-icon {

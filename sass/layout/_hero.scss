@@ -9,18 +9,32 @@
   background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .hero__title {
   color: var(--primary-white-color);
-  font-style: normal;
+  // font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+  // text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
+  // width: 696px;
   align-items: center;
-  margin: 0 auto;
+  // margin: auto;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 480px) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }

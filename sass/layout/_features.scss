@@ -40,9 +40,9 @@
   flex-wrap: wrap;
 }
 .features__list .features__list-item {
-  width: 270px;
+  width: 100%;
 }
 
-.features__list .features__list-item:not(:last-child) {
-  margin-right: 30px;
-}
+// .features__list .features__list-item:not(:last-child) {
+//   margin-right: 30px;
+// }
