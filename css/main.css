@@ -517,8 +517,6 @@ button {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  width: 270px;
-  height: 75px;
   padding-top: 10px;
 }
 
@@ -542,8 +540,14 @@ button {
   flex-wrap: wrap;
 }
 
-.features__list .features__list-item {
-  width: 100%;
+.features__list .features__list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .features__list .features__list-item:not(:last-child) {
+    max-width: 30x;
+  }
 }
 
 .section {
