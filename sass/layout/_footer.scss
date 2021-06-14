@@ -12,6 +12,10 @@
   text-decoration: none;
   display: block;
 }
+.footer__logo-part {
+  color: #2196f3;
+}
+
 .footer__adress {
   color: #ffffff;
   font-family: Roboto;
@@ -78,9 +82,12 @@
   padding-bottom: 20px;
 }
 .soc-footer.container {
-  display: flex;
+  // display: flex;
   align-items: baseline;
   justify-content: space-between;
+
+  @media screen and (max-width: 480px) {
+  }
 }
 
 .footer__list-link:hover,

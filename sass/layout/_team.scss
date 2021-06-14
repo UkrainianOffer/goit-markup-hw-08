@@ -27,10 +27,16 @@
   display: block;
   background-color: #fff;
   border: solid 1px var(--primary-white-color);
-  width: 270px;
+  max-width: 450px;
+  text-align: center;
   padding: 0 auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 767px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .team__list-img {
@@ -49,12 +55,10 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 .team__list-subtext {
-  text-align: center;
   margin-bottom: 16px;
 }
 .team-list .team__list-subtext {
