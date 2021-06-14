@@ -1,5 +1,9 @@
 .section {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .section__list {
