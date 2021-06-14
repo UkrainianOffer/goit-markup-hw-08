@@ -1,0 +1,112 @@
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+.modal__form-head {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+  color: var(--title-text-color);
+}
+.modal__form-field {
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.modal__form-input-wrapper {
+  position: relative;
+  display: block;
+  margin-top: 4px;
+}
+
+.modal__form-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.modal__form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+.modal__form-input:focus + .modal-form-icon {
+  fill: var(--accent-color);
+}
+
+.modal__form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__form-message {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  padding: 15px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__form-message::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__form-message:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+.modal__form-checkbox-desc {
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  margin-top: 20px;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal__form-checkbox-desc::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--title-text-color);
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  margin-right: 8px;
+}
+.modal__form-check:checked + .modal__form-checkbox-desc::before {
+  background-color: #2196f3;
+  background-image: url("../images/check.svg");
+  background-size: contain;
+  border-color: #2196f3;
+}
+.modal__form-checkbox-link {
+  color: #2196f3;
+}
+.modal__form-btn {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-left: 154px;
+}

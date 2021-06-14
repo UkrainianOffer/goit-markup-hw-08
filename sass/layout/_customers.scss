@@ -1,0 +1,30 @@
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customers__list {
+  display: flex;
+}
+
+.customers__list-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: solid 1px #afb1b8;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  transition: color 250ms linear;
+}
+.customers__list-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+.customers__list-link:hover .customers__list-icon,
+.customers__list-link:focus .customers__list-icon {
+  fill: var(--accent-color);
+}
+.customers__list-link:hover {
+  border-color: var(--accent-color);
+}
