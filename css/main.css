@@ -335,6 +335,24 @@ button {
   padding-bottom: 24px;
 }
 
+.header__mobile-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.header__burger-icon {
+  width: 40px;
+  height: 40px;
+  color: #000000;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header__menu {
   display: flex;
 }
@@ -343,21 +361,6 @@ button {
   .header__menu {
     display: none;
   }
-}
-
-.header__button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  padding: 0;
-}
-
-.header__button-icon {
-  width: 40px;
-  height: 40px;
 }
 
 .header__menu-item .header__menu-link {
@@ -382,11 +385,6 @@ button {
   height: 4px;
   background-color: var(--accent-color);
   bottom: -30px;
-}
-
-.header__container {
-  display: flex;
-  align-items: center;
 }
 
 .header__nav {
@@ -420,7 +418,6 @@ button {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  margin-right: 93px;
 }
 
 .header__logo-part {
