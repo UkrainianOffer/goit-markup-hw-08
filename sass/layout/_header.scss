@@ -6,6 +6,7 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    // margin-left: auto;
   }
 
   &__burger-icon {
@@ -22,7 +23,7 @@
 .header__menu {
   display: flex;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
@@ -116,7 +117,7 @@
   display: flex;
   margin-right: 30px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 768px) {

@@ -330,6 +330,16 @@ button {
   margin-left: 154px;
 }
 
+.mobile-menu .is-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -357,7 +367,7 @@ button {
   display: flex;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .header__menu {
     display: none;
   }
@@ -445,7 +455,7 @@ button {
   margin-right: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .header__contacts-item {
     display: none;
   }
@@ -474,31 +484,76 @@ button {
 }
 
 .hero {
-  background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-color: #c4c4c4;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/bg-mobile.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-left: auto;
+  background-size: cover;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-right: auto;
+  margin-left: auto;
+  letter-spacing: 0.06em;
   text-align: center;
 }
 
-.hero__title {
-  color: var(--primary-white-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  align-items: center;
-  box-sizing: border-box;
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/bg-mobile@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-mobile@2x.jpg");
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/bg-tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/bg-tablet@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/bg-desktop.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-desktop.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/bg-desktop@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-desktop@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+}
+
+@media screen and (min-width: 1200px) {
   .hero__title {
-    font-size: 26px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -634,7 +689,7 @@ button {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .team__list {
     display: flex;
     flex-wrap: wrap;
@@ -898,19 +953,29 @@ button {
 }
 
 .footer__part {
-  width: 206px;
   height: 100%;
   display: block;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 60px;
   padding-top: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer__list {
   display: flex;
   justify-content: space-between;
   max-width: 206px;
+}
+
+.footer__list-item {
+  margin-right: 10px;
 }
 
 .footer__list-icon {
@@ -936,7 +1001,12 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-bottom: 20px;
-  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__social {
+    text-align: center;
+  }
 }
 
 .soc-footer.container {
@@ -964,20 +1034,33 @@ button {
   letter-spacing: 0.03em;
 }
 
-.footer__subscribe-form {
-  display: flex;
+@media screen and (max-width: 767px) {
+  .footer__subscribe-title {
+    text-align: center;
+  }
 }
 
 .footer__subscribe-mail-field {
   background-color: transparent;
   padding: 15px 16px;
-  width: 358px;
   height: 50px;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   margin-right: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__subscribe-mail-field {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__subscribe-mail-field {
+    width: 358px;
+  }
 }
 
 .footer__subscribe-mail-button {
@@ -996,6 +1079,12 @@ button {
   align-items: center;
   cursor: pointer;
   transition: box-shadow 250ms var(--cubic);
+  margin-top: 30px;
+}
+
+.footer__subscribe-mail-conteiner {
+  display: flex;
+  justify-content: center;
 }
 
 .footer__subscribe-mail-button-ico {

@@ -50,13 +50,17 @@
 }
 
 .footer__part {
-  width: 206px;
   height: 100%;
   display: block;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 60px;
   padding-top: 60px;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer__list {
@@ -64,6 +68,10 @@
   justify-content: space-between;
   max-width: 206px;
 }
+.footer__list-item {
+  margin-right: 10px;
+}
+
 .footer__list-icon {
   width: 20px;
   height: 20px;
@@ -86,7 +94,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-bottom: 20px;
-  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .soc-footer.container {
   // display: flex;
@@ -114,22 +125,34 @@
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .footer__subscribe-form {
-  display: flex;
+  @media screen and (max-width: 1200px) {
+  }
 }
 
 .footer__subscribe-mail-field {
   background-color: transparent;
   padding: 15px 16px;
-  width: 358px;
+
   height: 50px;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   margin-right: 12px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .footer__subscribe-mail-button {
@@ -147,8 +170,15 @@
   padding: 10px 28px;
   align-items: center;
   cursor: pointer;
-
   transition: box-shadow 250ms var(--cubic);
+  margin-top: 30px;
+
+  @media screen and (max-width: 767px) {
+  }
+}
+.footer__subscribe-mail-conteiner {
+  display: flex;
+  justify-content: center;
 }
 
 .footer__subscribe-mail-button-ico {
