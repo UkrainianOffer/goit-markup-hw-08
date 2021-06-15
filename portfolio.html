@@ -63,7 +63,38 @@
                 <li class="portfolio__project-element">
                     <a href="#" class="portfolio__project-list-link-wrapper">
                         <div class="portfolio__project-list-img-wrapper">
-                            <img class="portfolio__project-img" src="./images/portfolio/screen.jpg" width="370" height="294" alt="Технокряк">
+                            <picture>
+                                <source srcset="
+                                                    ./images/portfolio-works/webp/desk-tech.webp   1x,
+                                                    ./images/portfolio-works/webp/desk-tech2x.webp 2x
+                                                  " media="(min-width: 1200px)" />
+                                <source srcset="
+                                                    ./images/portfolio-works/jpg/desk-tech.jpg   1x,
+                                                    ./images/portfolio-works/jpg/desk-tech2x.jpg 2x
+                                                  " media="(min-width: 1200px)" />
+                            
+                                <source srcset="
+                                                    ./images/portfolio-works/webp/tablet-tech.webp   1x,
+                                                    ./images/portfolio-works/webp/tablet-tech2x.webp 2x
+                                                  " media="(min-width: 768px)" />
+                                <source srcset="
+                                                    ./images/portfolio-works/jpg/tablet-tech.jpg   1x,
+                                                    ./images/portfolio-works/jpg/tablet-tech2x.jpg 2x
+                                                  " media="(min-width: 768px)" />
+                            
+                                <source srcset="
+                                                    ./images/portfolio-works/webp/mobile-tech.webp   1x,
+                                                    ./images/portfolio-works/webp/mobile-tech2x.webp 2x
+                                                  " media="(max-width: 767px)" />
+                                <source srcset="
+                                                    ./images/portfolio-works/jpg/mobile-tech.jpg   1x,
+                                                    ./images/portfolio-works/jpg/mobile-tech2x.jpg 2x
+                                                  " media="(max-width: 767px)" />
+                            
+                                <img class="portfolio-works-list__image" src="./images/portfolio-works/jpg/mobile-tech.jpg"
+                                    alt="Открытый сайт на ноутбуке" />
+                            </picture>
+
                             <p class="portfolio__overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                                 для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -164,7 +195,7 @@
     <footer class="footer">
         <div class="container soc-footer">
             <div class="footer__container">
-                <a href="" class="footer__logo"><span class="logo__part">Web</span>Studio</a>
+                <a href="" class="footer__logo"><span class="footer__logo-part">Web</span>Studio</a>
                 <address class="footer__adress">г. Киев, пр-т Леси Украинки, 26</address>
                 <ul>
                     <li><a class="footer__contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
