@@ -11,6 +11,10 @@
   line-height: 1.19;
   text-decoration: none;
   display: block;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .footer__logo-part {
   color: #2196f3;
@@ -25,9 +29,12 @@
   line-height: 1.71;
   margin-top: 20px;
   margin-bottom: 9px;
-}
 
-.footer__mail {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+.footer__contacts {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -36,21 +43,20 @@
   display: block;
   padding-bottom: 9px;
   text-decoration: none;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
-.footer__tel {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
+
 .footer__part {
   width: 206px;
   height: 80px;
   display: block;
   justify-content: center;
   align-items: center;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .footer__list {
@@ -80,6 +86,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-bottom: 20px;
+  text-align: center;
 }
 .soc-footer.container {
   // display: flex;
