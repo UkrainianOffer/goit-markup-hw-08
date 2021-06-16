@@ -6,8 +6,7 @@
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 30px;
-}
-.portfolio-buttons-list {
+
   @media screen and (max-width: 389px) {
     height: 156px;
     -ms-flex-line-pack: justify;
@@ -18,8 +17,6 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-}
-.portfolio-buttons-list {
   @media screen and (min-width: 390px) and (max-width: 767px) {
     min-height: 91px;
     -ms-flex-line-pack: justify;
@@ -30,8 +27,6 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-}
-.portfolio-buttons-list {
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
@@ -61,29 +56,21 @@
 .portfolio-works-list__item {
   margin-left: 30px;
   margin-bottom: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  .portfolio-works-list__item {
+  @media screen and (max-width: 767px) {
     width: 480px;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio-works-list__item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
     flex-basis: calc((100% - 60px) / 2);
   }
-  .portfolio-works-list__item:first-child .portfolio-works-list__text {
-    margin-bottom: 36px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio-works-list__item {
+  @media screen and (min-width: 1200px) {
     -ms-flex-preferred-size: calc((100% - 90px) / 3);
     flex-basis: calc((100% - 90px) / 3);
   }
+}
+
+.portfolio-works-list__item:first-child .portfolio-works-list__text {
+  margin-bottom: 36px;
 }
 
 .portfolio-works-list__link {
@@ -141,11 +128,9 @@
 .portfolio-works-list__hover-text {
   font-size: 16px;
   line-height: 1.88;
-  color: var(--main-white-color);
-}
+  color: #fff;
 
-@media screen and (max-width: 380px) {
-  .portfolio-works-list__hover-text {
+  @media screen and (max-width: 380px) {
     font-size: 14px;
     line-height: 1.4;
   }
@@ -161,12 +146,13 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--secondary-text-color);
+  color: var(--title-text-color);
 }
 
 .portfolio-works-list__text {
   font-size: 16px;
   line-height: 1.88;
+  list-style: none;
 }
 // .portfolio {
 //   padding-top: 94px;
