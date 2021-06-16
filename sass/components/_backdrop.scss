@@ -17,6 +17,16 @@
   min-height: 581px;
   background-color: var(--primary-white-color);
   padding: 40px;
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+    margin: 94px 15px;
+  }
+  @media screen and (max-width: 479px) {
+    padding: 20px;
+    height: 500px;
+  }
 }
 .modal__close-btn {
   position: absolute;

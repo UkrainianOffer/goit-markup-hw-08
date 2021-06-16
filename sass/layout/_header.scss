@@ -1,27 +1,10 @@
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
-
-  &__mobile-btn {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    // margin-left: auto;
-  }
-
-  &__burger-icon {
-    width: 40px;
-    height: 40px;
-    color: #000000;
-  }
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 }
 .header__menu {
   display: flex;
+  
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -29,17 +12,9 @@
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 }
-// .header__button {
-//   position: absolute;
-//   top: 8px;
-//   right: 8px;
-//   width: 30px;
-//   height: 30px;
-//   cursor: pointer;
-//   padding: 0;
-// }
 
 .header__menu-item .header__menu-link {
   color: var(--title-text-color);

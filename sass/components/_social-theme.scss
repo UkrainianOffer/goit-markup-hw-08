@@ -1,0 +1,47 @@
+.social-list {
+  display: inline-flex;
+
+  color: #afb1b8;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    font-size: 0;
+    line-height: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+    transition: background-color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+    &_theme_dark {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &_theme_dark {
+      fill: var(--primary-white-color);
+    }
+  }
+
+  &__icon {
+    fill: #afb1b8;
+
+    transition: fill 250ms var(--cubic);
+
+    .social-list__link:hover &,
+    .social-list__link:focus & {
+      fill: var(--primary-white-color);
+    }
+  }
+}
