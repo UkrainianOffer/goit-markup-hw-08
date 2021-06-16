@@ -141,8 +141,6 @@ button {
   display: inline-flex;
   justify-content: space-between;
   max-width: 206px;
-  margin-left: 32px;
-  margin-right: 32px;
   margin-bottom: 30px;
 }
 
@@ -181,6 +179,13 @@ button {
   line-height: 1.16;
   text-align: center;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
 }
 
 .backdrop {
@@ -269,7 +274,7 @@ button {
 }
 
 .modal__form-input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -300,7 +305,7 @@ button {
 }
 
 .modal__form-message {
-  width: 448px;
+  width: 100%;
   height: 120px;
   resize: none;
   padding: 15px;
@@ -321,9 +326,20 @@ button {
 
 .modal__form-checkbox-desc {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   display: flex;
   margin-top: 20px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden;
 }
 
 .is-hidden {
@@ -490,7 +506,7 @@ button {
 }
 
 .social-list__icon {
-  fill: #afb1b8;
+  fill: #fff;
   transition: fill 250ms var(--cubic);
 }
 
@@ -994,6 +1010,10 @@ button {
   display: block;
 }
 
+.team__list:not(:last-child) {
+  margin-right: 30px;
+}
+
 @media screen and (min-width: 767px) {
   .team__list {
     display: flex;
@@ -1135,8 +1155,10 @@ button {
   }
 }
 
-.portfolio-works-list__item:first-child .portfolio-works-list__text {
-  margin-bottom: 36px;
+@media screen and (max-width: 1199px) {
+  .portfolio-works-list__item:first-child .portfolio-works-list__text {
+    margin-bottom: 36px;
+  }
 }
 
 .portfolio-works-list__link {
@@ -1146,6 +1168,8 @@ button {
   transition: -webkit-box-shadow 250ms var(--cubic);
   transition: box-shadow 250ms var(--cubic);
   transition: box-shadow 250ms var(--cubic), -webkit-box-shadow 250ms var(--cubic);
+  text-decoration: none;
+  color: var(--primary-text-color);
 }
 
 .portfolio-works-list__link:hover,
