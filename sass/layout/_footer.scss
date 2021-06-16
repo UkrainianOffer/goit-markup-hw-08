@@ -47,6 +47,7 @@
   display: inline-block;
   margin-bottom: 20px;
   color: var(--primary-white-color);
+  text-decoration: none;
 }
 .accent {
   color: var(--accent-color);
@@ -62,6 +63,7 @@
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color 250ms var(--cubic);
   transition: color 250ms var(--cubic);
+  text-decoration: none;
 }
 
 .address__item:hover,

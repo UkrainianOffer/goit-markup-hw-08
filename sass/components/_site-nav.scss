@@ -9,6 +9,7 @@
 }
 
 .site-nav__logo {
+  text-decoration: none;
   @media screen and(min-width: 768px) {
     margin-right: 88px;
   }
@@ -35,8 +36,9 @@
   display: inline-block;
   position: relative;
   font-size: 40px;
+  text-decoration: none;
 
-  color: var(--secondary-text-color);
+  color: var(--title-text-color);
   transition: color 250ms var(--cubic);
 
   &:hover,

@@ -4,6 +4,7 @@
 // BASE
 @import "./base/common";
 @import "./base/container";
+@import "./base/section";
 // COMPONENTS
 @import "./components/button";
 @import "./components/social-list";
@@ -14,8 +15,9 @@
 @import "./components/social-theme";
 @import "./components/logo";
 @import "./components/site-nav-contacts";
-@import "./components/site-nav";
 @import "./components/underline";
+@import "./components/site-nav";
+
 // LAYOUT
 @import "./layout/header";
 @import "./layout/hero";
@@ -25,3 +27,4 @@
 @import "./layout/portfolio";
 @import "./layout/customers";
 @import "./layout/footer";
+@import "./layout/features.";
