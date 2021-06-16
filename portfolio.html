@@ -15,10 +15,10 @@
 
 <body>
     <!-- Шапка -->
-    <header class="header">
+    <header class="header border">
         <div class="container header__container">
             <nav class="header__nav">
-                <a href="" class="logo header__logo"><span class="header__logo-part">Web</span>Studio</a>
+                <a href="/index.html" class="logo header__logo"><span class="header__logo-part">Web</span>Studio</a>
                 <!-- Навигация сайта -->
                 <ul class="header__menu list">
                     <li class="header__menu-item"><a href="./index.html" class="header__menu-link active">Студия</a></li>
@@ -481,63 +481,60 @@
 
     <!-- Футер -->
     <footer class="footer">
-        <div class="container soc-footer">
-            <div class="footer__container">
-                <a href="" class="footer__logo"><span class="footer__logo-part">Web</span>Studio</a>
-                <address class="footer__adress">г. Киев, пр-т Леси Украинки, 26</address>
-                <ul>
-                    <li><a class="footer__contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="footer__contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <div class="footer__container container">
+            <div class="address">
+                <a href="/" class="address__logo logo"><span class="accent">Web</span>Studio</a>
+                <address class="address__wrapper">
+                    <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+                    <a class="address__item" href="mailto:info@devstudio.com">info@devstudio.com</a><br />
+                    <a class="address__item" href="tel:+380961111111">+38 096 111 11 11</a>
+                </address>
+            </div>
+    
+            <div class="social-container">
+                <h2 class="social-container__title">Присоединяйтесь</h2>
+                <ul class="social-list list">
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link social-list__link_theme_dark"><svg
+                                class="social-list__icon social-list__icon_theme_dark" width="20px" height="20px">
+                                <use href="./images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link social-list__link_theme_dark"><svg
+                                class="social-list__icon social-list__icon_theme_dark" width="20px" height="16.25px">
+                                <use href="./images/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+    
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link social-list__link_theme_dark"><svg
+                                class="social-list__icon social-list__icon_theme_dark" width="20px" height="20px">
+                                <use href="./images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link social-list__link_theme_dark"><svg
+                                class="social-list__icon social-list__icon_theme_dark" width="20px" height="20px">
+                                <use href="./images/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
     
-            <div class="footer__part">
-                <h3 class="footer__social">Присоеденяйтесь</h3>
-                <ul class="footer__list">
-                    <li class="footer__list-item">
-                        <a href="" class="footer__list-link">
-                            <svg class="footer__list-icon">
-                                <use href="./images/sprite.svg#icon-instagram-2"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="" class="footer__list-link">
-                            <svg class="footer__list-icon">
-                                <use href="./images/sprite.svg#icon-twitter-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="" class="footer__list-link">
-                            <svg class="footer__list-icon">
-                                <use href="./images/sprite.svg#icon-facebook-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="" class="footer__list-link">
-                            <svg class="footer__list-icon">
-                                <use href="./images/sprite.svg#icon-linkedin-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__subscribe">
-                <p class="footer__subscribe-title">Подпишитесь на рассылку</p>
-                <form class="footer__subscribe-form">
-                    <label for="">
-                        <input class="footer__subscribe-mail-field" type="email" name="email" placeholder="E-mail" />
-                    </label>
-                    <button class="footer__subscribe-mail-button" type="submit">
-                        <span class="footer__subscribe-mail-button-text">Подписаться</span><svg
-                            class="footer__subscribe-mail-button-ico" width="24" height="24">
-                            <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
+            <div class="subscribe">
+                <h2 class="subscribe__title">подпишитесь на рассылку</h2>
+                <form class="subscribe-form">
+                    <input class="subscribe-form__email-input" type="email" placeholder="E-mail" />
+                    <button type="submit" class="subscribe-form__button button">
+                        Подписаться
                     </button>
                 </form>
             </div>
+    
         </div>
     </footer>
 
@@ -548,7 +545,7 @@
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
 }
 @media screen and (min-width: 768px) {
 }

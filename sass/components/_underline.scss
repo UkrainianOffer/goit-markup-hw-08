@@ -1,0 +1,11 @@
+@mixin underline() {
+  content: "";
+  position: absolute;
+
+  height: 4px;
+  border-radius: 2px;
+  width: 100%;
+  bottom: -1px;
+  left: 0;
+  background-color: var(--accent-color);
+}

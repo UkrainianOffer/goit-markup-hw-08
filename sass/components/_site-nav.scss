@@ -1,0 +1,77 @@
+.site-nav {
+  display: flex;
+  @media screen and (min-width: 768px) {
+    margin-right: 84px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-right: 298px;
+  }
+}
+
+.site-nav__logo {
+  @media screen and(min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 26px;
+    margin-right: 93px;
+  }
+}
+
+.site-nav__pages-link {
+  @media screen and(min-width: 768px) {
+    display: flex;
+  }
+}
+
+.site-nav__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav__link {
+  display: inline-block;
+  position: relative;
+  font-size: 40px;
+
+  color: var(--secondary-text-color);
+  transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and(min-width: 768px) {
+    font-size: 14px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    &::after {
+      @include underline();
+      transform: scaleX(0);
+      opacity: 0;
+      transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
+    }
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  }
+}
+
+// underline
+.site-nav__underline {
+  @media screen and(min-width: 768px) {
+    &::after {
+      @include underline();
+    }
+  }
+}
